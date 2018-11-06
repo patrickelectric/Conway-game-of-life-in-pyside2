@@ -1,6 +1,7 @@
 import QtQuick 2.11
 import QtQuick.Layouts 1.11
 import QtQuick.Controls 2.4
+import QtQuick.Controls.Material 2.1
 import Qt.labs.platform 1.0 as QLP
 
 import Map 1.0
@@ -10,6 +11,8 @@ ApplicationWindow {
     height: 480
     width: 480
     visible: true
+    Material.theme: Material.Dark
+    Material.accent: Material.Blue
 
     menuBar: MenuBar {
         Menu {
@@ -74,7 +77,7 @@ ApplicationWindow {
                         } else if(modelData) {
                             return "#f3f3f4"
                         } else {
-                            return "#b5b7bf"
+                            return "#505050"
                         }
                     }
                     MouseArea {
