@@ -4,8 +4,8 @@ from PySide2.QtCore import Qt, QCoreApplication
 from PySide2.QtWidgets import QApplication
 from PySide2.QtQml import QQmlApplicationEngine
 
-# Register Map and use it in QML
-from map import Map
+# Register Magic and use it in QML
+from magic import Magic
 
 def main():
     sys.argv += ['--style', 'material']
