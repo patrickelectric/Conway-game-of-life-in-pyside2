@@ -1,4 +1,4 @@
-from PySide2.QtCore import QObject, Qt, Slot, Property, Signal, QTimer
+from PySide2.QtCore import QObject, Slot, Property, Signal
 from PySide2.QtQml import qmlRegisterType
 
 import copy
@@ -24,6 +24,6 @@ class Magic(QObject):
 
     @Slot()
     def print_it(self):
-        print('>', self._foo)
+        print('python:', self._foo)
 
 qmlRegisterType(Magic, 'Magic', 1, 0, 'Magic')

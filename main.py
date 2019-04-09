@@ -8,7 +8,7 @@ from PySide2.QtQml import QQmlApplicationEngine
 from magic import Magic
 
 def main():
-    sys.argv += ['--style', 'material']
+    sys.argv += ['--style', 'Fusion']
     app = QApplication(sys.argv)
 
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
